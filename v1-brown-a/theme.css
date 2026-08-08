@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* A — 上品：v1の静けさを残し、深いブラウンで輪郭と温度を加える */
+:root {
+  --ivory: #f1e7d8;
+  --paper: #faf5ec;
+  --sand: #e8ddcf;
+  --taupe: #8a7563;
+  --ink: #4a382c;
+  --line: rgba(74, 56, 44, .22);
+}
+body {
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(90,70,52,.035) .7px, transparent .8px);
+  background-size: 6px 6px;
+}
+.site-header {
+  background: linear-gradient(180deg, rgba(250,245,236,.94), rgba(250,245,236,.72) 72%, transparent);
+}
+.brand, .section h2, .section h3, .hero h1, .closing h2 {
+  color: #4a382c;
+}
+.hero {
+  background: #f1e7d8;
+}
+.hero-image {
+  filter: saturate(.7) sepia(.06) brightness(1.05);
+}
+.pill {
+  color: #fff;
+  background: #3f5b2a;
+  border-color: #3f5b2a;
+}
+.pill:hover {
+  color: #fff;
+  background: #4d6939;
+  border-color: #4d6939;
+}
+.soft {
+  background: #eee3d4;
+}
+.reason-list article,
+.menu-list,
+.faq-list,
+.access-info dl {
+  border-color: rgba(74,56,44,.25);
+}
+.reason-list article,
+.menu-option,
+details,
+.access-info dl > div {
+  border-bottom-color: rgba(74,56,44,.18);
+}
+blockquote {
+  background: rgba(255,251,244,.78);
+  box-shadow: 0 16px 40px rgba(74,56,44,.05);
+}
+.photo-slot {
+  background: #ddcfbe;
+}
+.photo-slot img {
+  filter: saturate(.64) sepia(.05) contrast(.95) brightness(1.04);
+}
+.closing {
+  background: #dccdb9;
+}
+footer {
+  background: #4a382c;
+}
+@media (max-width: 768px) {
+  .site-header { background: rgba(250,245,236,.86); }
+  .hero::after {
+    background: linear-gradient(rgba(241,231,216,.06), rgba(241,231,216,.35) 43%, rgba(241,231,216,.96) 82%);
+  }
+}
