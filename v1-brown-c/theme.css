@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* C — 高級感：濃いブラウンを面で使い、深緑と生成りで抜けを残す */
+:root {
+  --ivory: #eee3d4;
+  --paper: #f7f0e6;
+  --sand: #dfd0be;
+  --taupe: #8a7563;
+  --ink: #463429;
+  --line: rgba(70, 52, 41, .24);
+}
+body {
+  background-color: #f7f0e6;
+  background-image: radial-gradient(rgba(70,52,41,.035) .75px, transparent .85px);
+  background-size: 5px 5px;
+}
+.site-header {
+  background: rgba(247,240,230,.93);
+  border-bottom: 1px solid rgba(70,52,41,.16);
+}
+.brand, .hero h1, .section h2, .section h3 {
+  color: #463429;
+}
+.hero {
+  background: #eee3d4;
+}
+.hero-image {
+  filter: saturate(.58) sepia(.08) contrast(1.03) brightness(.98);
+}
+.pill {
+  color: #fff;
+  background: #3f5b2a;
+  border-color: #3f5b2a;
+}
+.pill:hover {
+  color: #fff;
+  background: #5a4638;
+  border-color: #5a4638;
+}
+.soft {
+  color: #f7f0e6;
+  background: #5a4638;
+}
+.soft .section-kicker,
+.soft .eyebrow,
+.soft .reason-list span,
+.soft blockquote cite {
+  color: #c9b59d;
+}
+.soft h2,
+.soft h3,
+.soft .body-copy,
+.soft .reason-list h3 {
+  color: #fffaf1;
+}
+.soft .body-copy,
+.soft .reason-list p,
+.soft .section-heading.split > p {
+  color: #e2d5c5;
+}
+.soft .reason-list,
+.soft .reason-list article {
+  border-color: rgba(255,250,241,.2);
+}
+.soft blockquote {
+  color: #463429;
+  background: #f0e6d8;
+  box-shadow: 0 22px 50px rgba(30,20,14,.18);
+}
+.section:not(.soft) {
+  background: rgba(247,240,230,.48);
+}
+.photo-slot {
+  background: #c8b39b;
+  box-shadow: 14px 14px 0 rgba(90,70,56,.1);
+}
+.photo-slot img {
+  filter: saturate(.58) sepia(.06) contrast(.98) brightness(1.02);
+}
+.menu-list,
+.faq-list,
+.access-info dl {
+  border-top-color: rgba(70,52,41,.3);
+}
+.menu-option,
+details,
+.access-info dl > div {
+  border-bottom-color: rgba(70,52,41,.2);
+}
+.price-row {
+  border-bottom-color: rgba(70,52,41,.16);
+}
+.closing {
+  color: #f8f1e8;
+  background: #5a4638;
+}
+.closing h2 {
+  color: #fffaf1;
+}
+.closing .pill {
+  background: #3f5b2a;
+  border-color: #71845b;
+}
+footer {
+  background: #33261f;
+}
+@media (max-width: 768px) {
+  .site-header { background: rgba(247,240,230,.92); }
+  .hero::after {
+    background: linear-gradient(rgba(238,227,212,.08), rgba(238,227,212,.38) 42%, rgba(238,227,212,.98) 82%);
+  }
+  .soft blockquote { box-shadow: 0 14px 34px rgba(30,20,14,.16); }
+}
