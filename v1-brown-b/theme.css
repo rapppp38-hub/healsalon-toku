@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* B — 温かい：木・土・自然光を感じるウォームベージュを広く使う */
+:root {
+  --ivory: #ead8c4;
+  --paper: #f3e8d9;
+  --sand: #dbc5ad;
+  --taupe: #8b705b;
+  --ink: #4e392b;
+  --line: rgba(92, 64, 45, .24);
+}
+body {
+  background-color: #f3e8d9;
+  background-image:
+    linear-gradient(90deg, rgba(115,82,56,.025) 1px, transparent 1px),
+    radial-gradient(rgba(103,75,52,.04) .8px, transparent .9px);
+  background-size: 28px 28px, 5px 5px;
+}
+.site-header {
+  background: rgba(244,234,221,.91);
+  border-bottom: 1px solid rgba(92,64,45,.12);
+}
+.brand, .section h2, .section h3, .hero h1, .closing h2 {
+  color: #4e392b;
+}
+.hero {
+  background: #ead8c4;
+}
+.hero-image {
+  filter: saturate(.78) sepia(.11) brightness(1.04);
+}
+.eyebrow, .section-kicker {
+  color: #8b705b;
+}
+.pill {
+  color: #fff;
+  background: #566b3d;
+  border-color: #566b3d;
+}
+.pill:hover {
+  color: #fff;
+  background: #67503e;
+  border-color: #67503e;
+}
+.section {
+  background: rgba(246,237,225,.5);
+}
+.section.soft {
+  background: #dfcbb5;
+}
+.intro, .menu-section, .access-section {
+  background: #f3e8d9;
+}
+.reason-list article,
+.menu-option,
+details,
+.access-info dl > div {
+  border-bottom-color: rgba(92,64,45,.2);
+}
+.reason-list,
+.menu-list,
+.faq-list,
+.access-info dl {
+  border-top-color: rgba(92,64,45,.28);
+}
+blockquote {
+  background: #f8efe3;
+  border: 1px solid rgba(92,64,45,.12);
+  box-shadow: 0 18px 44px rgba(92,64,45,.08);
+}
+.photo-slot {
+  background: #d5bda4;
+}
+.photo-slot img {
+  filter: saturate(.72) sepia(.1) contrast(.95) brightness(1.05);
+}
+.menu-option {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.price-row {
+  border-bottom-color: rgba(92,64,45,.15);
+}
+.closing {
+  background: #cdb294;
+}
+.closing-light {
+  opacity: .62;
+  filter: saturate(.62) sepia(.12);
+}
+footer {
+  background: #513c2e;
+}
+@media (max-width: 768px) {
+  .site-header { background: rgba(244,234,221,.9); }
+  .hero::after {
+    background: linear-gradient(rgba(234,216,196,.06), rgba(234,216,196,.34) 40%, rgba(234,216,196,.98) 82%);
+  }
+  .section { background: rgba(246,237,225,.42); }
+  .section.soft { background: #dfcbb5; }
+  .menu-option { padding-left: 10px; padding-right: 10px; }
+}
